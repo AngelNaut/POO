@@ -1,2 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using diagrama;
+
+Console.WriteLine("Hola profe");
+Administrador persona = new Administrador();
+persona.nombre = "angel";
+persona.area = "administracion";

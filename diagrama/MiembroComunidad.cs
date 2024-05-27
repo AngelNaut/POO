@@ -8,12 +8,22 @@ namespace diagrama
 {
     internal abstract class MiembroComunidad
     {
-        protected string id;
-        protected string nombre;
-        protected string apellido;
-        protected int edad;
-        protected string centroEducativo;
+        public string id { get; set; }
+        public string nombre { get; set; }
+        public string apellido { get; set; }
+        public int edad { get; set; }
+        public string centroEducativo { get; set; }
 
+        public MiembroComunidad() { }
+
+        public MiembroComunidad(string id, string nombre, string apellido, int edad, string centroEducativo) {
+        this.id = id;
+        this.nombre = nombre;  
+        this.apellido = apellido;
+        this.edad = edad;
+        this.centroEducativo = centroEducativo;
+        
+        }
 
     }
 }
